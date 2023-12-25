@@ -1,10 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <!-- The rest of your head... -->
-</head>
-<body>
-    <!-- The rest of your body... -->
-</body>
-</html>
+/* styles.css */
+
+body {
+    background-color: #547D54;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.header_text {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    animation: shakeAnimation 2s infinite;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.gif_container {
+    margin-top: 40px;
+}
+
+/* Ajout de styles pour la version mobile */
+@media only screen and (max-width: 600px) {
+    .container {
+        font-size: 14px;
+    }
+
+    .gif_container {
+        margin-top: 20px;
+    }
+}
