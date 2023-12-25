@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="./styles.css">
     <style>
         body {
-            background-color: #547D54; /* Nouvelle couleur de fond verte */
+            background-color: #547D54;
             margin: 0;
             padding: 0;
             display: flex;
@@ -14,11 +14,13 @@
         }
 
         .container {
-            text-align: center;color: #FFFFFF; /* blanc */ en gras/ "font-size: 16px;"
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 16px;
         }
 
         .header_text {
-            color: #FFFFFF; /* blanc */
+            color: #FFFFFF;
             font-family: 'Montserrat', sans-serif;
             animation: shakeAnimation 2s infinite;
         }
@@ -42,19 +44,32 @@
         }
 
         .gif_container {
-            margin-top: 40px; /* Espace au-dessus de l'image */
+            margin-top: 40px;
+        }
+
+        /* Ajout de styles pour la version mobile */
+        @media only screen and (max-width: 600px) {
+            .container {
+                font-size: 14px;
+            }
+
+            .gif_container {
+                margin-top: 20px;
+            }
         }
     </style>
-</head> 
+</head>
 <body>
     <div class="container">
         <div>
             <h1 class="header_text">Happy Birthday ALOUCH !</h1>
         </div>
-         <div class="gif_container">
-        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+        </div>
+        <p class="message">"Un grand merci pour ton aide qui m'a permis de retrouver le goût de vivre, de redécouvrir le bonheur et d'oser essayer de nouvelles choses."</p>
     </div>
-    <p class="message">"Un grand merci pour ton aide qui m'a permis de retrouver le goût de vivre, de redécouvrir le bonheur et d'oser essayer de nouvelles choses."</p>
-</body> 
+</body>
 </html>
+
 
